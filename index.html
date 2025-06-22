@@ -39,6 +39,57 @@
             <p>In this model, data are organized into tables that contain rows and columns, also known as relations. It is the most common database model used today.</p>
  <h2>Structured Query Language (SQL)</h2>
             <p>SQL is a standard language for accessing and managing data in a database. It includes sub-languages such as DDL, DML, and DCL.</p>
+    <h1>SQL Sub Languages: DDL, DML and DCL</h1>
+
+    <h2>1) DDL (Data Definition Language)</h2>
+    <p>DDL is used by the database designer and programmers to specify the content and the structure of table. It is used to define the physical characteristics of record. It includes commands that manipulate the structure of object such as tables. For example, to create a table:</p>
+    <p><strong>Syntax:</strong></p>
+    <pre>CREATE TABLE table_name (field_name1 data_type1, field_name2 data_type2, …);</pre>
+    <pre>CREATE TABLE Student (SN Number, Fname text);</pre>
+
+    <h2>2) DML (Data Manipulation Language)</h2>
+    <p>DML is related with manipulation of records such as retrieval, sorting, display and deletion of records or data. It helps user to use query and display report of the table. It provides techniques for processing the database. It includes commands like insert, delete, select, and update to manipulate the information stored in the database.</p>
+    <p><strong>Syntax:</strong></p>
+    <pre>INSERT INTO table_name VALUES (list of values);</pre>
+    <pre>INSERT INTO student VALUES (1, 'RAM');</pre>
+
+    <h2>3) DCL (Data Control Language)</h2>
+    <p>DCL provides additional features for security of table and database. It includes commands for controlling data and access to the database. Some examples of these commands are <code>GRANT</code>, <code>COMMIT</code>, etc.</p>
+
+    <h1>Entity Relationship Database Model (ER Model)</h1>
+    <p>The entity relationship database model (ER diagram) is based on the perception of a real world that contains a collection of basic objects called entities and the relationships among these objects. The ER diagram is an overall logical structure of a database that can be expressed graphically. It was developed to facilitate database design. The major objective of the ER diagram is to show relationships among different entities. It has the following components:</p>
+
+    <h2>1) Entity</h2>
+    <p>The distinguishable object of this real world is known as an entity. It has a set of properties which uniquely identifies an entity. For example, if <em>Student</em> is an entity, then his/her name may be a property. It is denoted by a rectangle.</p>
+
+    <h2>2) Attributes</h2>
+    <p>Attributes are the properties possessed by an entity. They are represented by ellipses or oval shapes. For example, if <em>Student</em> is an entity, then its attributes can be registration number, name, roll no, class, address, etc.</p>
+
+    <h2>3) Link</h2>
+    <p>The flow of information is indicated by a link in an ER diagram. It is simply denoted by a line. It connects entities, attributes, and relationships.</p>
+
+    <h2>4) Relationships</h2>
+    <p>A relationship is an association among several entities. It is represented by a diamond shape. For example, if <em>Teachers</em> and <em>Students</em> are two entities, the association can be derived as: <em>Teacher teaches Students</em>. It shows meaningful dependencies between several entities. There are three types of relationships: One to One, One to Many, and Many to Many.</p>
+
+    <h1>DBA (Database Administrator)</h1>
+    <p>DBA is the most responsible person in an organization with sound knowledge of DBMS. He/she is the overall administrator of the program. He/she has the maximum amount of privileges for accessing the database and defining the roles of the employees who use the system. The main goal of the DBA is to keep the database server up to date, secure, and provide information to the user on demand.</p>
+
+    <h2>Qualities of a Good DBA</h2>
+    <ul>
+        <li>Should have sound and complete knowledge about DBMS and its operations.</li>
+        <li>Should be familiar with several DBMS packages such as MS Access, MySQL, Oracle, etc.</li>
+        <li>Should have deep knowledge about the OS on which the database server is running.</li>
+        <li>Should have a good understanding of network architecture.</li>
+        <li>Should have good database designing skills.</li>
+    </ul>
+
+    <h2>Responsibilities</h2>
+    <ul>
+        <li>Install, monitor, and upgrade the database server.</li>
+        <li>Maintain database security by creating backups for recovery.</li>
+        <li>Conduct training on the use of the database.</li>
+        <li>Define user privileges, relationships, and manage forms and reports in the database.</li>
+    </ul>
 <h2>Normalization</h2>
             <p>Normalization is the process of breaking down complex relations into simpler relations to reduce redundancy and ensure data integrity.</p>
             <h3>First Normal Form (1NF)</h3>
